@@ -1,7 +1,11 @@
+var bandera =false; 
 function validar (){
-    alert($("#user").val()); //Manda el usuario
+ if(bandera){
+     console.log("Validacion completa");
+ }
+}
+function correctCaptcha (){
 
-    var pass= document.getElementById("password");
-    alert(pass.value);//Manda el password
-
+     console.log("Captcha resuelto correctamente");
+     bandera = true;
 }
